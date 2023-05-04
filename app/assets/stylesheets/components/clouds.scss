@@ -1,0 +1,408 @@
+.center {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+
+
+  #cloud1 {
+    background: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 150px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    animation: move 90s infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    &::before {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 170px;
+      height: 150px;
+      border-radius: 50%;
+      top: -90px;
+      right: 40px;
+    }
+
+    &::after {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      top: -50px;
+      left: 50px;
+    }
+  }
+}
+
+.top {
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+
+  #cloud2 {
+    background: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 150px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    animation: move 85s infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    &::before {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 170px;
+      height: 150px;
+      border-radius: 50%;
+      top: -90px;
+      right: 40px;
+    }
+
+    &::after {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      top: -50px;
+      left: 50px;
+    }
+  }
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+
+  #cloud3 {
+    background: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 150px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    animation: move 35s infinite;
+    animation-direction: reverse;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    &::before {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 170px;
+      height: 150px;
+      border-radius: 50%;
+      top: -90px;
+      right: 40px;
+    }
+
+    &::after {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      top: -50px;
+      left: 50px;
+    }
+  }
+}
+
+.right-top {
+  position: absolute;
+  top: 25%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+
+#cloud4 {
+  background: white;
+  width: 300px;
+  height: 100px;
+  border-radius: 150px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  animation: move 40s infinite;
+  animation-direction: reverse;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  &::before {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    border-radius: 50%;
+    top: -90px;
+    right: 40px;
+  }
+
+  &::after {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: -50px;
+    left: 50px;
+  }
+}
+
+
+.right-bottom {
+  position: absolute;
+  bottom: 5%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+
+#cloud5 {
+  background: white;
+  width: 300px;
+  height: 100px;
+  border-radius: 150px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  animation: move 100s infinite;
+  animation-direction: reverse;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  &::before {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    border-radius: 50%;
+    top: -90px;
+    right: 40px;
+  }
+
+  &::after {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: -50px;
+    left: 50px;
+  }
+}
+
+.right-center {
+  position: absolute;
+  bottom: 40%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+
+  #cloud6 {
+    background: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 150px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    animation: move 80s infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    &::before {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 170px;
+      height: 150px;
+      border-radius: 50%;
+      top: -90px;
+      right: 40px;
+    }
+
+    &::after {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      top: -50px;
+      left: 50px;
+    }
+  }
+}
+
+
+.left-bottom {
+  position: absolute;
+  bottom: -5%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+
+  #cloud7 {
+    background: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 150px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    animation: move 70s infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    &::before {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 170px;
+      height: 150px;
+      border-radius: 50%;
+      top: -90px;
+      right: 40px;
+    }
+
+    &::after {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      top: -50px;
+      left: 50px;
+    }
+  }
+}
+
+.left-top {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+
+  #cloud8 {
+    background: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 150px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    animation: move 70s infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    &::before {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 170px;
+      height: 150px;
+      border-radius: 50%;
+      top: -90px;
+      right: 40px;
+    }
+
+    &::after {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      top: -50px;
+      left: 50px;
+    }
+  }
+}
+
+
+.left-center {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+
+  #cloud9 {
+    background: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 150px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    animation: move 70s infinite;
+    animation-direction: reverse;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    &::before {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 170px;
+      height: 150px;
+      border-radius: 50%;
+      top: -90px;
+      right: 40px;
+    }
+
+    &::after {
+      content: '';
+      background: white;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      top: -50px;
+      left: 50px;
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translatex(0%);
+  }
+
+  25% {
+    transform: translatex(120%);
+  }
+
+  50% {
+    transform: translatex(0%);
+  }
+
+  75% {
+    transform: translatex(-120%);
+  }
+
+  100% {
+    transform: translatex(0%);
+  }
+}

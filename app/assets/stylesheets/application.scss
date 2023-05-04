@@ -15,10 +15,24 @@
  */
 @import 'pages/home';
 @import 'pages/show';
+@import 'components/form';
+
+:root {
+ --blue: #38B6FF;
+}
+
 
 body {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--blue);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.z-index {
+  z-index: 1;
 }

@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_04_142130) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_04_194959) do
   create_table "tweets", force: :cascade do |t|
     t.string "topic"
     t.string "tone"
     t.string "keywords"
-    t.string "hastags"
-    t.string "length"
+    t.string "hashtags"
+    t.string "perspective"
     t.text "tweet"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

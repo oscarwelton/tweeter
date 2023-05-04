@@ -58,7 +58,7 @@ class TweetsController < ApplicationController
 
 
   def tweet_params
-    params.require(:tweet).permit(:topic, :tone, :keywords, :hastags, :length, :audience, :emojis, :tweet)
+    params.require(:tweet).permit(:topic, :tone, :keywords, :hashtags, :perspective, :audience, :emojis, :tweet)
   end
 
 end

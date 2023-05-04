@@ -8,8 +8,41 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <%= yield %>
+    <div class="z-index">
+      <%= yield %>
+    </div>
+    <div class="center">
+      <div id = "cloud1"></div>
+    </div>
+    <div class="top">
+      <div id = "cloud2"></div>
+    </div>
+    <div class="bottom">
+      <div id = "cloud3"></div>
+    </div>
+    <div class="right-top">
+      <div id = "cloud4"></div>
+    </div>
+    <div class="right-bottom">
+      <div id = "cloud5"></div>
+    </div>
+    <div class="right-center">
+      <div id = "cloud6"></div>
+    </div>
+    <div class="left-bottom">
+      <div id = "cloud7"></div>
+    </div>
+    <div class="left-top">
+      <div id = "cloud8"></div>
+    </div>
+    <div class="left-center">
+      <div id = "cloud9"></div>
+    </div>
   </body>
 </html>
