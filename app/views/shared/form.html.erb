@@ -1,0 +1,36 @@
+ <div class="form">
+    <form action="<%= tweets_path %>" method="POST">
+      <div class="form-row">
+        <label for="tweet_topic">Topic</label>
+        <input type="text" id="tweet_topic" name="tweet[topic]">
+      </div>
+      <div class="form-row">
+        <label for="tweet_tone">Tone</label>
+        <input type="text" id="tweet_tone" name="tweet[tone]">
+      </div>
+      <div class="form-row">
+        <label for="tweet_length">Length</label>
+        <input type="text" id="tweet_length" name="tweet[length]">
+      </div>
+      <div class="form-row">
+        <label for="tweet_hastags">Hastags</label>
+        <input type="text" id="tweet_hastags" name="tweet[hastags]">
+      </div>
+      <div class="form-row">
+        <label for="tweet_audience">Audience</label>
+        <input type="text" id="tweet_audience" name="tweet[audience]">
+      </div>
+      <div class="form-row">
+        <label for="tweet_keywords">Keywords</label>
+        <input type="text" id="tweet_keywords" name="tweet[keywords]">
+      </div>
+      <div class="form-row">
+        <label for="tweet_emojis">Emojis</label>
+        <input type="checkbox" id="tweet_emojis" name="tweet[emojis]">
+      </div>
+      <div class="form-row">
+        <input type="submit" value="Generate Tweet">
+      </div>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    </form>
+  </div>
