@@ -1,19 +1,19 @@
  <div class="form" data-controller="form">
     <form action="<%= tweets_path %>" method="POST" data-remote="true">
       <div class="form-row">
-        <label for="tweet_topic">Topic</label>
+        <label for="tweet_topic">I want to tweet about:</label>
         <input class="field" type="text" id="tweet_topic" name="tweet[topic]">
-      </div>
-      <div class="form-row">
-        <label for="tweet_keywords">Include these keywords:</label>
-        <input class="field" type="text" id="tweet_keywords" name="tweet[keywords]">
       </div>
       <div class="form-row">
         <label for="tweet_perspective">From the perspective of:</label>
         <input class="field" type="text" id="tweet_perspective" name="tweet[perspective]">
       </div>
       <div class="form-row">
-        <label for="tweet_tone">In the tone:</label>
+        <label for="tweet_keywords">Including these keywords:</label>
+        <input class="field" type="text" id="tweet_keywords" name="tweet[keywords]">
+      </div>
+      <div class="form-row">
+        <label for="tweet_tone">In the tone of:</label>
         <input class="field" type="text" id="tweet_tone" name="tweet[tone]">
       </div>
       <div class="form-row">

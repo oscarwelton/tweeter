@@ -1,5 +1,4 @@
 .form {
-
   .form-row {
     padding: 10px 10px;
     display: flex;
@@ -8,6 +7,7 @@
 
   label {
     font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
   }
 
   .emojis {
@@ -19,7 +19,18 @@
     border: 1px solid var(--blue);
     border-radius: 5px;
     padding: 8px;
+    font-style: italic;
+    font-size: 20px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--blue);
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+      font-style: normal;
+    }
   }
+
+
 
   .form-submit {
     margin: auto;

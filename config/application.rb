@@ -9,6 +9,15 @@ Bundler.require(*Rails.groups)
 module Tweeter
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+
+    config.before_configuration {
+      dotenv_path = Rails.root.join(".env")
+      if File.exist?(dotenv_path)
+        require "dotenv"
+        Dotenv.load!(dotenv_path)
+      end
+    }
+
     config.load_defaults 7.0
 
     # Configuration for the application, engines, and railties goes here.
