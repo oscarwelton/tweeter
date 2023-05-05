@@ -14,8 +14,8 @@
  *= require_self
  */
 @import 'pages/home';
-@import 'pages/show';
 @import 'components/form';
+@import 'pages/_tweet';
 
 :root {
  --blue: #38B6FF;

@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-
 ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -72,10 +71,9 @@ group :test do
   gem "webdrivers"
 end
 
-# added by me!
 
+# added by me!
 gem 'dotenv-rails', groups: [:development, :test]
 gem "ruby-openai"
 gem "simple_form"
-gem  'rufo'
-gem 'turbo-rails'
+gem 'rufo'

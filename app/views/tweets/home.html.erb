@@ -4,5 +4,8 @@
     <h1>Welcome to Tweeter!</h1>
     <h3>Generate tweets with <i>Artificial Intelligence</i></h3>
   </div>
-  <%= render 'shared/form' %>
+  <div id="tweet">
+    <%= render 'form' %>
+  </div>
 </div>
+ <a id="share" href="<%=@url%>" target="_blank">Post</a>

@@ -1,0 +1,15 @@
+#share {
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 45px;
+  color: white;
+  background-color: var(--blue);
+  font-size: 20px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: white;
+    color: var(--blue);
+  }
+}

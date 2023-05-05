@@ -1,5 +1,6 @@
 class TweetsController < ApplicationController
   require 'openai'
+  include ActionView::RecordIdentifier
   @@client = OpenAI::Client.new(access_token: ENV['OPENAI_KEY'])
 
   def home
@@ -8,17 +9,19 @@ class TweetsController < ApplicationController
 
   def create
     @tweet = Tweet.new(tweet_params)
+    @tweet.generated_tweet = generate_tweet(@tweet)
+
+    @url = tweet_link(@tweet)
 
     if @tweet.save
-      redirect_to tweet_path(@tweet)
-    else
-      render :new
+      respond_to do |format|
+        format.turbo_stream do
+          render turbo_stream: turbo_stream.replace(:tweet,
+            partial: "tweet",
+            locals: { tweet: @tweet })
+        end
+      end
     end
-  end
-
-  def show
-    tweet = Tweet.find(params[:id])
-    @tweet = generate_tweet(tweet)
   end
 
   def generate_tweet(tweet)
@@ -49,9 +52,16 @@ class TweetsController < ApplicationController
     )
   end
 
+  def tweet_link(tweet)
+    partial = tweet.generated_tweet.gsub(' ', '%20')
+    url = "https://twitter.com/intent/tweet?text=#{partial}"
+    return url
+  end
+
   private
 
   def tweet_params
-    params.require(:tweet).permit(:topic, :tone, :keywords, :hashtags, :perspective, :audience, :emojis, :tweet)
+    params.require(:tweet).permit(:topic, :tone, :keywords, :hashtags, :perspective, :audience, :emojis)
   end
+
 end
