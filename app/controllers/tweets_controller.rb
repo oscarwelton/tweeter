@@ -36,7 +36,7 @@ class TweetsController < ApplicationController
         respond_to do |format|
           format.turbo_stream do
             render turbo_stream: turbo_stream.replace(
-              "edit-tweet", partial: "editted", locals: { tweet: @tweet }
+              "edit-tweet", partial: "edited", locals: { tweet: @tweet }
             )
           end
         end
