@@ -1,11 +1,11 @@
-<div class="links">
-  <%= link_to root_path, class:"button" do %>
-    New <i class="fa-solid fa-arrows-rotate"></i>
-  <% end %>
-  <%= link_to("#", class: "button", id:"edit") do %>
-    Edit <i class="fa-solid fa-pen-to-square"></i>
-  <% end %>
-  <%= link_to(@url, class: "button", target: "_blank") do %>
-    Share <i class="fa-brands fa-twitter"></i>
-  <% end %>
-</div>
+ <div class="links" data-controller="edit">
+    <%= link_to root_path, class:"button" do %>
+      New <i class="fa-solid fa-arrows-rotate"></i>
+    <% end %>
+    <%= link_to("", class: "button", id:"edit") do %>
+      Edit <i class="fa-solid fa-pen-to-square"></i>
+    <% end %>
+    <%= link_to(@url, class: "button", target: "_blank", id:"share") do %>
+      Share <i class="fa-brands fa-twitter"></i>
+    <% end %>
+  </div>
