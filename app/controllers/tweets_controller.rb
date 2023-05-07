@@ -18,7 +18,7 @@ class TweetsController < ApplicationController
       respond_to do |format|
         format.turbo_stream do
           render turbo_stream: turbo_stream.replace(:tweet,
-            partial: "tweet",
+            partial: 'tweet',
             locals: { tweet: @tweet })
         end
       end
@@ -36,7 +36,7 @@ class TweetsController < ApplicationController
         respond_to do |format|
           format.turbo_stream do
             render turbo_stream: turbo_stream.replace(
-              "edit-tweet", partial: "edited", locals: { tweet: @tweet }
+              'edit-tweet', partial: 'edited', locals: { tweet: @tweet }
             )
           end
         end
@@ -66,7 +66,7 @@ class TweetsController < ApplicationController
     @@client.completions(
       parameters: {
         model: 'text-davinci-003',
-        prompt: prompt,
+        prompt:,
         max_tokens: 1000,
         temperature: 1
       }
@@ -75,7 +75,7 @@ class TweetsController < ApplicationController
 
   def tweet_link(tweet)
     partial = tweet.generated_tweet.gsub(' ', '%20').gsub('#', '%23').gsub('"', '')
-    url = "https://twitter.com/intent/tweet?text=#{partial}"
+    "https://twitter.com/intent/tweet?text=#{partial}"
   end
 
   def character_count(tweet)

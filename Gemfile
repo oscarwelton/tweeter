@@ -76,4 +76,4 @@ gem "simple_form"
 gem 'rufo'
 gem "font-awesome-sass", "~> 6.4.0"
 gem 'jquery-rails'
-# gem "stimulus-rails"
+gem "stimulus-rails"
