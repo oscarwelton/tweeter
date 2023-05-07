@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <title>Tweeter</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %>
+    <%= turbo_include_tags %>
+    <%= javascript_importmap_tags %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <%= turbo_include_tags %>
-    <%= javascript_importmap_tags %>
   </head>
   <body>
     <div class="z-index">
@@ -42,6 +43,9 @@
     </div>
     <div class="left-center">
       <div id = "cloud9"></div>
+    </div>
+
+    <div data-controller="hello">
     </div>
   </body>
 </html>

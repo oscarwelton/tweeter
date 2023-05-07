@@ -18,6 +18,8 @@ gem "puma", "~> 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
+gem "stimulus-rails"
+
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
@@ -76,4 +78,5 @@ gem "simple_form"
 gem 'rufo'
 gem "font-awesome-sass", "~> 6.4.0"
 gem 'jquery-rails'
-gem "stimulus-rails"
+gem 'htmlbeautifier'
+gem 'turbolinks', '~> 5.2.0'

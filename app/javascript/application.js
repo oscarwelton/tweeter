@@ -1,2 +1,2 @@
 import "@hotwired/turbo-rails"
-//= require jquery
+import "controllers"

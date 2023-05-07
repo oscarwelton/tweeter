@@ -103,6 +103,7 @@ GEM
       sassc (~> 2.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    htmlbeautifier (1.4.2)
     i18n (1.13.0)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.1.6)
@@ -222,6 +223,9 @@ GEM
       actionpack (>= 6.0.0)
       activejob (>= 6.0.0)
       railties (>= 6.0.0)
+    turbolinks (5.2.1)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     web-console (4.2.0)
@@ -250,6 +254,7 @@ DEPENDENCIES
   debug
   dotenv-rails
   font-awesome-sass (~> 6.4.0)
+  htmlbeautifier
   importmap-rails
   jbuilder
   jquery-rails
@@ -265,6 +270,7 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   stimulus-rails
   turbo-rails
+  turbolinks (~> 5.2.0)
   tzinfo-data
   web-console
   webdrivers
