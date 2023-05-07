@@ -1,10 +1,6 @@
-import { Controller } from "@hotwired/stimulus"
+import { Controller } from "@hotwired/stimulus";
 
-// Connects to data-controller="hello"
 export default class extends Controller {
-  connect() {
-    console.log("Hello from Stimulus you cunt!")
-  }
+  connect() {}
 }
-
-console.log("hello world!")
+console.log("hello from the motherfucking stimulus controller!!");

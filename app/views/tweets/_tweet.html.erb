@@ -1,15 +1,26 @@
 <div id="edit-tweet">
-  <div class="generated-tweet">
-    <h2><%= @tweet.generated_tweet %></h2>
+  <div class="generated-tweet" id="generated-tweet">
+    <p><%= @tweet.generated_tweet %></p>
   </div>
-  <h6 id="characters"><%=@count%>/260 Characters</h6>
-  <%= render 'shared/links' %>
-  <div id="edit-form">
+  <h6 id="characters"><span id="count"<%=@count%></span>/260 Characters</h6>
+  <div id="edit-form" class="d-none">
     <%= form_for @tweet do |f| %>
       <div class="row">
-        <%= f.text_field :generated_tweet, class:"field" %>
-        <%= f.submit 'Edit', class:"button" %>
+        <%= f.text_area :generated_tweet, class:"area" %>
+        <h6 id="characters"><span id="count"><%=@count%></span>/260 Characters</h6>
+        <%= f.submit 'Save', class:"button" %>
       </div>
+    <% end %>
+  </div>
+  <div class="links" data-controller="edit">
+    <%= link_to root_path, class:"button" do %>
+      New <i class="fa-solid fa-arrows-rotate"></i>
+    <% end %>
+    <%= link_to("", class: "button", id:"edit") do %>
+      Edit <i class="fa-solid fa-pen-to-square"></i>
+    <% end %>
+    <%= link_to(@url, class: "button", target: "_blank") do %>
+      Share <i class="fa-brands fa-twitter"></i>
     <% end %>
   </div>
 </div>

@@ -3,13 +3,13 @@ class TweetsController < ApplicationController
   include ActionView::RecordIdentifier
   @@client = OpenAI::Client.new(access_token: ENV['OPENAI_KEY'])
 
-  def home
+  def new
     @tweet = Tweet.new
   end
 
   def create
     @tweet = Tweet.new(tweet_params)
-    @tweet.generated_tweet = generate_tweet(@tweet)
+    @tweet.generated_tweet = generate_tweet(@tweet).strip.gsub('"', '')
 
     @url = tweet_link(@tweet)
     @count = character_count(@tweet)
@@ -74,7 +74,7 @@ class TweetsController < ApplicationController
   end
 
   def tweet_link(tweet)
-    partial = tweet.generated_tweet.gsub(' ', '%20').gsub('#', '%23').gsub('"', '')
+    partial = tweet.generated_tweet.gsub(' ', '%20').gsub('#', '%23')
     "https://twitter.com/intent/tweet?text=#{partial}"
   end
 

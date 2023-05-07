@@ -17,3 +17,12 @@
 #characters {
   text-align: right;
 }
+
+.generated-tweet {
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  padding: 10px;
+  height: 350px;
+  font-size: 1.5rem;
+}
