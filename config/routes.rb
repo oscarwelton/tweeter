@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "tweets#home"
-  resources :tweets, only: [:new, :create, :show]
+  resources :tweets, only: [:new, :create, :edit, :update]
 end

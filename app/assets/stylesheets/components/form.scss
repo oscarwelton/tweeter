@@ -1,5 +1,5 @@
 #form {
-  .form-row {
+  .row {
     padding: 10px 10px;
     display: flex;
     flex-direction: column;
@@ -48,6 +48,40 @@
       background-color: white;;
       transition: ease-in-out 0.1s;
       cursor: pointer;
+    }
+  }
+}
+
+#tweet_emojis {
+  transform: scale(1.5);
+}
+
+
+#edit-form {
+  .row {
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .field {
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    padding: 8px;
+    font-style: italic;
+    font-size: 20px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--blue);
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+      font-style: normal;
     }
   }
 }

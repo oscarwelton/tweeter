@@ -3,8 +3,8 @@
   padding: 30px;
   border-radius: 45px;
   box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
-  max-width: 500px;
-  height: 870px;
+  width: 450px;
+  height: 800px;
 }
 
 .header {
@@ -23,6 +23,9 @@
   }
 }
 
-#tweet_emojis {
-  transform: scale(1.5);
+.footer {
+  z-index: 1;
+  position: fixed;
+  bottom: 0%;
+  right: 5%;
 }

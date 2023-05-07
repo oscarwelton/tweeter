@@ -14,13 +14,17 @@
  *= require_self
  */
 @import 'pages/home';
-@import 'components/form';
 @import 'pages/_tweet';
+
+@import "font-awesome";
+
+@import 'components/form';
+@import 'components/links';
+
 
 :root {
  --blue: #38B6FF;
 }
-
 
 body {
   height: 100vh;

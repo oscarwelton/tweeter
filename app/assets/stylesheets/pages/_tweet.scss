@@ -1,4 +1,4 @@
-#share {
+.button {
   text-decoration: none;
   border: 2px solid black;
   padding: 10px;
@@ -12,4 +12,8 @@
     background-color: white;
     color: var(--blue);
   }
+}
+
+#characters {
+  text-align: right;
 }

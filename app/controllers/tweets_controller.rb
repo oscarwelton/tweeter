@@ -12,6 +12,7 @@ class TweetsController < ApplicationController
     @tweet.generated_tweet = generate_tweet(@tweet)
 
     @url = tweet_link(@tweet)
+    @count = character_count(@tweet)
 
     if @tweet.save
       respond_to do |format|
@@ -22,6 +23,26 @@ class TweetsController < ApplicationController
         end
       end
     end
+  end
+
+  def edit
+    @tweet.find(params[:id])
+  end
+
+  def update
+      @tweet = Tweet.find(params[:id])
+      if @tweet.update(edit_params)
+        @url = tweet_link(@tweet)
+        respond_to do |format|
+          format.turbo_stream do
+            render turbo_stream: turbo_stream.replace(
+              "edit-tweet", partial: "editted", locals: { tweet: @tweet }
+            )
+          end
+        end
+      else
+        raise
+      end
   end
 
   def generate_tweet(tweet)
@@ -53,9 +74,12 @@ class TweetsController < ApplicationController
   end
 
   def tweet_link(tweet)
-    partial = tweet.generated_tweet.gsub(' ', '%20')
+    partial = tweet.generated_tweet.gsub(' ', '%20').gsub('#', '%23').gsub('"', '')
     url = "https://twitter.com/intent/tweet?text=#{partial}"
-    return url
+  end
+
+  def character_count(tweet)
+    tweet.generated_tweet.length
   end
 
   private
@@ -64,4 +88,7 @@ class TweetsController < ApplicationController
     params.require(:tweet).permit(:topic, :tone, :keywords, :hashtags, :perspective, :audience, :emojis)
   end
 
+  def edit_params
+    params.require(:tweet).permit(:generated_tweet)
+  end
 end

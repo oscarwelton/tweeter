@@ -1,26 +1,26 @@
 <div id="form">
   <%= form_with(model: @tweet, data: { turbo_form: true }) do |f| %>
-    <div class="form-row">
-      <%= f.label :topic, "I want to tweet about:" %>
+    <div class="row">
+      <%= f.label :topic, "My Topic:" %>
       <%= f.text_field :topic, class: "field", id: "tweet_topic" %>
     </div>
-    <div class="form-row">
-      <%= f.label :perspective, "From the perspective of:" %>
+    <div class="row">
+      <%= f.label :perspective, "From a perspective of:" %>
       <%= f.text_field :perspective, class: "field", id: "tweet_perspective" %>
     </div>
-    <div class="form-row">
+    <div class="row">
       <%= f.label :keywords, "Including these keywords:" %>
       <%= f.text_field :keywords, class: "field", id: "tweet_keywords" %>
     </div>
-    <div class="form-row">
-      <%= f.label :tone, "In the tone of:" %>
+    <div class="row">
+      <%= f.label :tone, "With a tone of:" %>
       <%= f.text_field :tone, class: "field", id: "tweet_tone" %>
     </div>
-    <div class="form-row">
+    <div class="row">
       <%= f.label :audience, "For an audience of:" %>
       <%= f.text_field :audience, class: "field", id: "tweet_audience" %>
     </div>
-    <div class="form-row">
+    <div class="row">
       <%= f.label :hashtags, "With hashtags:" %>
       <%= f.text_field :hashtags, class: "field", id: "tweet_hashtags" %>
     </div>
@@ -28,8 +28,8 @@
       <%= f.label :emojis, "Emojis 🙈" %>
       <%= f.check_box :emojis, id: "tweet_emojis" %>
     </div>
-    <div class="form-row">
-      <%= f.submit "Generate!", class: "form-submit" %>
+    <div class="row" data-controller="loadscreen">
+      <%= f.submit "Generate!", class: "button" %>
     </div>
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <% end %>

@@ -1,4 +1,16 @@
-<div id="<%= dom_id tweet %>">
-  <h1><%= @tweet.generated_tweet %></h1>
-   <a id="share" href="<%=@url%>" target="_blank">Post</a>
-</div>
+<div id="edit-tweet">
+  <div class="generated-tweet">
+    <h2><%= @tweet.generated_tweet %></h2>
+  </div>
+  <h6 id="characters"><%=@count%>/260 Characters</h6>
+
+<%= render 'shared/links' %>
+
+  <div id="edit-form">
+    <%= form_for @tweet do |f| %>
+      <div class="row">
+        <%= f.text_field :generated_tweet, class:"field" %>
+        <%= f.submit 'Edit', class:"button" %>
+      </div>
+    <% end %>
+  </div>

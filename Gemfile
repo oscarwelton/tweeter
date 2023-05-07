@@ -77,3 +77,4 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem "ruby-openai"
 gem "simple_form"
 gem 'rufo'
+gem "font-awesome-sass", "~> 6.4.0"
