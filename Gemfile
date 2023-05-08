@@ -79,6 +79,6 @@ gem "font-awesome-sass", "~> 6.4.0"
 gem 'jquery-rails'
 gem 'htmlbeautifier'
 gem 'turbolinks', '~> 5.2.0'
- gem 'sqlite3', group: :development
- gem 'pg', group: :production
+#  gem 'sqlite3', group: :development
+gem 'pg'
 gem 'rails_12factor', group: :production
