@@ -1,12 +1,12 @@
 .sun {
+  height: 35vh;
+  width: 35vh;
   position: absolute;
-  top: 25%;
-  left: 20%;
+  top: 10%;
+  left: 10%;
   transform: translate(-50%, -50%);
-
-  img {
-    height: 35vh;
-  }
+  background-image: url(https://i.ibb.co/zRwrL0t/sun-logo.png);
+  background-size: contain;
 }
 
 .rotate {
@@ -20,4 +20,12 @@
   to {
     transform: rotate(359deg);
   }
+}
+.no-rotate {
+  color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: none;
 }

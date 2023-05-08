@@ -2,4 +2,12 @@
   <p><%= @tweet.generated_tweet %></p>
   <h6 id="characters"><span id="count"></span>/260 Characters</h6>
 </div>
-<%= render 'shared/links' %>
+
+<div class="links" data-controller="edit">
+  <%= link_to root_path, class:"button" do %>
+    New <i class="fa-solid fa-arrows-rotate"></i>
+  <% end %>
+  <%= link_to(@url, class: "button", target: "_blank", id:"share") do %>
+    Share <i class="fa-brands fa-twitter"></i>
+  <% end %>
+</div>

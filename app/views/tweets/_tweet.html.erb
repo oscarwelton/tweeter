@@ -6,10 +6,20 @@
     <%= form_for @tweet do |f| %>
       <div class="row">
         <%= f.text_area :generated_tweet, class:"area", maxlength:"280" %>
+        <%= f.submit 'Save', class:"button" %>
       </div>
     </div>
     <h6 id="characters"><span id="count"></span>/260 Characters</h6>
-    <%= f.submit 'Save', class:"button" %>
   <% end %>
-  <%= render 'shared/links' %>
+  <div class="links" data-controller="edit">
+    <%= link_to root_path, class:"button" do %>
+      New <i class="fa-solid fa-arrows-rotate"></i>
+    <% end %>
+    <button class="button", id="edit">
+      Edit <i class="fa-solid fa-pen-to-square"></i>
+    </button>
+    <%= link_to(@url, class: "button", target: "_blank", id:"share") do %>
+      Share <i class="fa-brands fa-twitter"></i>
+    <% end %>
+  </div>
 </div>
