@@ -36,9 +36,10 @@ body {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 400px) {
   html {
-    font-size: 17px;
+    font-size: 10px;
   }
 
   .content {
@@ -46,14 +47,24 @@ body {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 12px;
   }
 
   .content {
     width: 70%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  .content {
+    width: 60%;
   }
 }
 
@@ -71,7 +82,7 @@ body {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
   .content {
     width: 30%;
@@ -83,5 +94,7 @@ body {
   html {
     font-size: 16px;
   }
-
+  .content {
+    width: 30%;
+  }
 }
