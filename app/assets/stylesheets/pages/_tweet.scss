@@ -1,22 +1,24 @@
 .button {
   text-decoration: none;
-  border: 2px solid black;
-  padding: 10px;
+  padding: 12px 10px;
   border-radius: 45px;
   color: white;
   background-color: var(--blue);
-  font-size: 20px;
+  border: none;
+  font-size: 24px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 
   &:hover {
+    transition: 0.1s ease-in-out;
     background-color: white;
     color: var(--blue);
     cursor: pointer;
+    box-shadow: -5px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
 .tweet-container {
-  margin: 0px auto;
+  margin: 0px auto 30px auto;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
   border: 1px solid var(--blue);
   border-radius: 5px;
@@ -30,5 +32,22 @@
 
   p {
     margin: 0;
+  }
+}
+
+.edit-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: transparent;
+  color: var(--blue);
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+    color:rgba(0, 0, 0, 0.5)
   }
 }

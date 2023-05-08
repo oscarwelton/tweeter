@@ -1,11 +1,13 @@
 <div id="edit-tweet" data-controller="count">
   <div class="tweet-container" id="generated-tweet">
     <p><%= @tweet.generated_tweet %></p>
+    <button class="edit-button", id="edit">
+      <i class="fa-solid fa-pen-to-square"></i>
+    </button>
     <div class="counter">
       <h5><span id="character-count"></span> / 280 </h5>
     </div>
   </div>
-
   <div id="edit-form" class="d-none" data-controller="live-count">
     <%= form_for @tweet, html: { id: "tweet-form" } do |f| %>
       <div class="tweet-container">
@@ -17,13 +19,10 @@
     <% end %>
     <button type="submit" form="tweet-form" class="button">Save <i class="fa-regular fa-floppy-disk"></i></button>
   </div>
-   <div class="links" data-controller="edit">
+  <div class="links" data-controller="edit">
     <%= link_to root_path, class: "button", id: "refresh-button" do %>
       New <i class="fa-solid fa-arrows-rotate"></i>
     <% end %>
-    <button class="button", id="edit">
-      Edit <i class="fa-solid fa-pen-to-square"></i>
-    </button>
     <%= link_to(@url, class: "button", target: "_blank", id:"share") do %>
       Share <i class="fa-brands fa-twitter"></i>
     <% end %>

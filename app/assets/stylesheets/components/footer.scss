@@ -3,12 +3,16 @@
   position: fixed;
   bottom: 0;
   color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
+
+  h3 {
+    margin: 0;
+  }
 
   ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
 
   li {
@@ -22,5 +26,6 @@
 
   a:hover {
     color: white;
+    transition: 0.1s ease-in-out;
   }
 }

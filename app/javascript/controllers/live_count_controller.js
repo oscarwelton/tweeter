@@ -19,7 +19,7 @@ export default class extends Controller {
       if (length === 280) {
         counter.style.color = "red";
       } else {
-        counter.style.color = "";
+        counter.style.color = "green";
       }
     });
 

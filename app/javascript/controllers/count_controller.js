@@ -8,7 +8,7 @@ export default class extends Controller {
       console.error("Element with ID 'character-count' not found.");
       return;
     }
-    const num = tweet.innerText.length;
+    const num = tweet.value;
     count.innerText = num;
   }
 }

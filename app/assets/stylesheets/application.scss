@@ -29,6 +29,7 @@
 
 body {
   height: 100vh;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,4 +45,8 @@ body {
 
 .d-none {
   display: none;
+}
+
+.bold {
+  font-weight: bold;
 }
