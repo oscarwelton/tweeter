@@ -1,22 +1,16 @@
 import { Controller } from "@hotwired/stimulus"
 
-// Connects to data-controller="count"
 export default class extends Controller {
   connect() {
+    const tweet = document.getElementById("generated-tweet");
+    const count = this.element.querySelector("#character-count");
+    if (!count) {
+      console.error("Element with ID 'character-count' not found.");
+      return;
+    }
+    const num = tweet.innerText.length;
+    count.innerText = num;
   }
 }
 
-console.log("hello from the character counter controller!")
-
-// addEventListener("keyup", (event) => {
-//   const tweet = document.getElementById("generated-tweet");
-//   const count = document.getElementById("count");
-//   let tweetLength = tweet.innerText.length;
-//   console.log(tweetLength)
-//   count.value = tweetLength;
-//   if (tweetLength < 280) {
-//     count.classList.remove("d-none");
-//   } else {
-//     count.classList.add("d-none");
-//   }
-// });
+console.log("hello from the character counter controller!");

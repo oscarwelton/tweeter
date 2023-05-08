@@ -4,3 +4,5 @@ export default class extends Controller {
   connect() {}
 }
 console.log("hello from the motherfucking stimulus controller!!");
+
+  

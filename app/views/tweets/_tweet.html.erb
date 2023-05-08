@@ -1,25 +1,36 @@
 <div id="edit-tweet" data-controller="count">
-  <div class="generated-tweet" id="generated-tweet">
+  <div class="tweet-container" id="generated-tweet">
     <p><%= @tweet.generated_tweet %></p>
+    <div class="counter">
+      <h5><span id="character-count"></span> / 280 </h5>
+    </div>
+    <div class="links" data-controller="edit">
+      <%= link_to root_path, class: "button", id: "refresh-button" do %>
+        New <i class="fa-solid fa-arrows-rotate"></i>
+      <% end %>
+      <button class="button", id="edit">
+        Edit <i class="fa-solid fa-pen-to-square"></i>
+      </button>
+      <%= link_to(@url, class: "button", target: "_blank", id:"share") do %>
+        Share <i class="fa-brands fa-twitter"></i>
+      <% end %>
+    </div>
   </div>
   <div id="edit-form" class="d-none">
-    <%= form_for @tweet do |f| %>
-      <div class="row">
-        <%= f.text_area :generated_tweet, class:"area", maxlength:"280" %>
-        <%= f.submit 'Save', class:"button" %>
+    <%= form_for @tweet, html: { id: "tweet-form" } do |f| %>
+      <div class="tweet-container">
+        <%= f.text_area :generated_tweet, maxlength: "280", class: "area" %>
+        <div class="counter">
+          <h5><span id="live-count"></span> / 280 </h5>
+        </div>
       </div>
-    </div>
-    <h6 id="characters"><span id="count"></span>/260 Characters</h6>
-  <% end %>
-  <div class="links" data-controller="edit">
-    <%= link_to root_path, class:"button" do %>
-      New <i class="fa-solid fa-arrows-rotate"></i>
     <% end %>
-    <button class="button", id="edit">
-      Edit <i class="fa-solid fa-pen-to-square"></i>
-    </button>
-    <%= link_to(@url, class: "button", target: "_blank", id:"share") do %>
-      Share <i class="fa-brands fa-twitter"></i>
-    <% end %>
+    <button type="submit" form="tweet-form" class="button">Save <i class="fa-regular fa-floppy-disk"></i></button>
   </div>
 </div>
+<script>
+  var refreshButton = document.getElementById("refresh-button");
+  refreshButton.addEventListener("click", function() {
+    location.reload();
+  });
+</script>

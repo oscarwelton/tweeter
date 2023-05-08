@@ -11,20 +11,24 @@
   &:hover {
     background-color: white;
     color: var(--blue);
+    cursor: pointer;
   }
 }
 
-#characters {
-  text-align: right;
-}
-
-.generated-tweet {
+.tweet-container {
+  margin: 0px auto;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
   border: 1px solid var(--blue);
   border-radius: 5px;
   padding: 10px;
-  height: 350px;
-  font-size: 1.5rem;
-  word-wrap: break-word;
+  height: 400px;
   overflow-wrap: break-word;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  resize: none;
+  position: relative;
+
+  p {
+    margin: 0;
+  }
 }

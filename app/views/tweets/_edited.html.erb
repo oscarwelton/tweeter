@@ -1,13 +1,19 @@
-<div class="generated-tweet">
+<div class="tweet-container">
   <p><%= @tweet.generated_tweet %></p>
-  <h6 id="characters"><span id="count"></span>/260 Characters</h6>
 </div>
 
 <div class="links" data-controller="edit">
-  <%= link_to root_path, class:"button" do %>
+  <%= link_to root_path, class: "button", id: "refresh-button" do %>
     New <i class="fa-solid fa-arrows-rotate"></i>
   <% end %>
   <%= link_to(@url, class: "button", target: "_blank", id:"share") do %>
     Share <i class="fa-brands fa-twitter"></i>
   <% end %>
 </div>
+
+<script>
+  var refreshButton = document.getElementById("refresh-button");
+  refreshButton.addEventListener("click", function() {
+    location.reload();
+  });
+</script>

@@ -12,6 +12,7 @@
 
   .emojis {
     padding: 10px 10px;
+    text-align: center;
   }
 
   .field {
@@ -56,39 +57,10 @@
   transform: scale(1.5);
 }
 
-
 #edit-form {
-  .row {
-    padding: 10px 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
   label {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.8);
-  }
-
-  .field {
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--blue);
-    border-radius: 5px;
-    padding: 8px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.5em;
-  }
-
-  .area {
-    box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
-    border: 1px solid var(--blue);
-    border-radius: 5px;
-    padding: 10px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 1.5em;
-    resize: none;
-    height: 350px;
   }
 
   &:focus {
@@ -97,4 +69,26 @@
     box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
     font-style: italic;
   }
+
+  .area {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    overflow-wrap: break-word;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    resize: none;
+    overflow: visible;
+    height: 364px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.live-counter {
+  float: right;
+  margin: 0;
 }
