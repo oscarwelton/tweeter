@@ -20,34 +20,7 @@
 @import 'components/links';
 @import 'components/clouds';
 @import 'components/sun';
-@import 'components/footer';
 @import 'components/counter';
+@import 'components/header';
+@import 'components/footer';
 
-:root {
- --blue: #38B6FF;
-}
-
-body {
-  // height: 100vh;
-
-  margin: 30px 0 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--blue);
-  overflow-x: hidden;
-  overflow-y: hidden;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.z-index {
-  z-index: 1;
-}
-
-.d-none {
-  display: none;
-}
-
-.bold {
-  font-weight: bold;
-}

@@ -1,42 +1,36 @@
+:root {
+  --blue: #38B6FF;
+}
+
+body {
+  // height: 100vh;
+
+  margin: 30px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.z-index {
+  z-index: 1;
+}
+
+.d-none {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .content {
   background-color: white;
   padding: 30px;
   border-radius: 45px;
   box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
   width: 450px;
-}
-
-#app-name {
-  color: var(--blue);
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  h1 {
-    margin: 10px 0px;
-  }
-
-  h3 {
-    margin: 0px 0px 30px 0px;
-    color:rgba(0, 0, 0, 0.6);
-  }
-
-  img {
-    height: 100px;
-    padding: 0px 150px;
-
-  &:hover {
-    transform: scale(1.1);
-    transition: 0.1s ease-in-out;
-  }
-  }
-}
-
-a {
-  text-decoration: none;
-  color: black;
 }
