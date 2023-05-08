@@ -15,9 +15,9 @@
     <%= favicon_link_tag 'favicon.ico' %>
   </head>
   <body>
+    <%= render 'shared/background' %>
     <div class="z-index">
       <%= yield %>
     </div>
-    <%= render 'shared/background' %>
   </body>
 </html>
