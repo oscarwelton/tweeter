@@ -1,10 +1,15 @@
-<div class="content">
-  <div class="header">
-    <img src="https://i.ibb.co/xCBWz0F/tweeter-logo.png" alt="tweeter-logo">
-    <h1>Welcome to <span id="app-name">Tweeter!</span></h1>
-    <h3>Generate tweets with <i>Artificial Intelligence</i></h3>
+<div class="container">
+  <div class="content">
+    <div class="header">
+      <div class="logo">
+        <img src="https://i.ibb.co/xCBWz0F/tweeter-logo.png" alt="tweeter-logo">
+      </div>
+      <h1>Welcome to <span id="app-name">Tweeter!</span></h1>
+      <h3>Generate tweets with <i>Artificial Intelligence</i></h3>
+    </div>
+    <div id="tweet">
+      <%= render 'form' %>
+    </div>
   </div>
-  <div id="tweet">
-    <%= render 'form' %>
-  </div>
+  <%= render 'shared/footer' %>
 </div>

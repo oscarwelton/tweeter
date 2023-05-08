@@ -1,12 +1,14 @@
 .sun {
-  height: 35vh;
-  width: 35vh;
+  height: 35%;
+  width: 35%;
   position: absolute;
   top: 10%;
   left: 2.5%;
   transform: translate(-50%, -50%);
   background-image: url(https://i.ibb.co/zRwrL0t/sun-logo.png);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .rotate {
