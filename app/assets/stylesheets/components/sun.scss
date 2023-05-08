@@ -10,7 +10,7 @@
 }
 
 .rotate {
-  animation: rotation 20s infinite linear;
+  animation: rotation 70s infinite linear;
 }
 
 @keyframes rotation {
@@ -25,10 +25,10 @@
 .no-rotate {
   color: white;
   position: fixed;
-  top: 38%;
-  left: 24%;
+  top: 36%;
+  left: 25%;
   transform: translate(-50%, -50%);
-  animation: rotation 20s infinite linear;
+  animation: rotation 70s infinite linear;
   animation-direction: reverse;
 
   h2, h5 {
