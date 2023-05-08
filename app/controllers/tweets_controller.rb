@@ -5,6 +5,7 @@ class TweetsController < ApplicationController
 
   def new
     @tweet = Tweet.new
+    @count = Tweet.count
   end
 
   def create
