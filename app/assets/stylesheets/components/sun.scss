@@ -10,7 +10,7 @@
 }
 
 .rotate {
-  animation: rotation 60s infinite linear;
+  animation: rotation 20s infinite linear;
 }
 
 @keyframes rotation {
@@ -21,11 +21,26 @@
     transform: rotate(359deg);
   }
 }
+
 .no-rotate {
   color: white;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 38%;
+  left: 24%;
   transform: translate(-50%, -50%);
-  animation-name: none;
+  animation: rotation 20s infinite linear;
+  animation-direction: reverse;
+
+  h2, h5 {
+    margin: 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
 }
