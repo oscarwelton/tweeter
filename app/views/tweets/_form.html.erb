@@ -1,5 +1,6 @@
 <div id="form">
   <%= form_with(model: @tweet, data: { turbo_form: true }) do |f| %>
+   <%# <input type="reset" value="Reset"> %>
     <div class="row">
       <%= f.label :topic, "My Topic:" %>
       <%= f.text_field :topic, class: "field", id: "tweet_topic" %>

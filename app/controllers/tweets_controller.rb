@@ -10,9 +10,7 @@ class TweetsController < ApplicationController
   def create
     @tweet = Tweet.new(tweet_params)
     @tweet.generated_tweet = generate_tweet(@tweet).strip.gsub('"', '')
-
     @url = tweet_link(@tweet)
-    @count = character_count(@tweet)
 
     if @tweet.save
       respond_to do |format|
@@ -76,10 +74,6 @@ class TweetsController < ApplicationController
   def tweet_link(tweet)
     partial = tweet.generated_tweet.gsub(' ', '%20').gsub('#', '%23')
     "https://twitter.com/intent/tweet?text=#{partial}"
-  end
-
-  def character_count(tweet)
-    tweet.generated_tweet.length
   end
 
   private

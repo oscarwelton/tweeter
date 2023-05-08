@@ -1,0 +1,22 @@
+.plane {
+  position: absolute;
+  bottom: 0%;
+  right: -50%;
+}
+
+.fly {
+  animation: fly 15s infinite linear;
+  animation-delay: 5s;
+  height: 20%;
+}
+
+
+@keyframes fly {
+  0% {
+    transform: translatex(100%);
+  }
+
+  100% {
+    transform: translatex(-1000%);
+  }
+}

@@ -1,17 +1,15 @@
-<div id="edit-tweet">
+<div id="edit-tweet" data-controller="count">
   <div class="generated-tweet" id="generated-tweet">
     <p><%= @tweet.generated_tweet %></p>
-    <h6 id="characters"><span id="count"<%=@count%></span>/260 Characters</h6>
   </div>
   <div id="edit-form" class="d-none">
     <%= form_for @tweet do |f| %>
       <div class="row">
-        <%= f.text_area :generated_tweet, class:"area" %>
-        <h6 id="characters"><span id="count"><%=@count%></span>/260 Characters</h6>
-        <%= f.submit 'Save', class:"button" %>
+        <%= f.text_area :generated_tweet, class:"area", maxlength:"280" %>
       </div>
-    <% end %>
-  </div>
-
- <%= render 'shared/links' %>
+    </div>
+    <h6 id="characters"><span id="count"></span>/260 Characters</h6>
+    <%= f.submit 'Save', class:"button" %>
+  <% end %>
+  <%= render 'shared/links' %>
 </div>

@@ -1,0 +1,23 @@
+.sun {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+
+  img {
+    height: 35vh;
+  }
+}
+
+.rotate {
+  animation: rotation 60s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
