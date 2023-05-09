@@ -55,9 +55,9 @@ class TweetsController < ApplicationController
     no_emoji_prompt = "The tweet should include the following keyword(s): #{tweet.keywords}. The tweet should include the following as hashtag(s): #{tweet.hashtags}. Do not include any emojis."
 
     if tweet.emojis == 'true'
-      "Please generate me a tweet about #{tweet.topic} with a #{tweet.tone} tone. My audience is #{tweet.audience} so please tailor your response accordingly. #{emoji_prompt}"
+      "Please generate me a tweet with a maximum of 270 characters about #{tweet.topic} with a #{tweet.tone} tone. My audience is #{tweet.audience} so please tailor your response accordingly. #{emoji_prompt}"
     else
-      "Please generate me a tweet about #{tweet.topic} with a #{tweet.tone} tone. My audience is #{tweet.audience} so please tailor your response accordingly. #{no_emoji_prompt}"
+      "Please generate me a tweet maximum of 270 characters about #{tweet.topic} with a #{tweet.tone} tone. My audience is #{tweet.audience} so please tailor your response accordingly. #{no_emoji_prompt}"
     end
   end
 

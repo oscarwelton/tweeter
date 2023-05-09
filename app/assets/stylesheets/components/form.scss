@@ -1,12 +1,12 @@
 #form {
   .row {
-    padding: 0.625rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
   }
 
   label {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.8);
   }
 
@@ -21,7 +21,7 @@
     border-radius: 0.313rem;
     padding: 0.5rem;
     font-style: italic;
-    font-size: 1.25rem;
+    font-size: 1rem;
 
     &:focus {
       outline: none;
@@ -65,5 +65,25 @@
 
   button {
     float: right;
+  }
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .clear-button {
+    background-color: transparent;
+    color: var(--blue);
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--light-shadow);
+      transform: scale(1.1);
+      transition: 0.1s ease-in-out;
+    }
   }
 }
