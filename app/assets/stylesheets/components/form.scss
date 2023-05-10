@@ -7,11 +7,12 @@
 
   label {
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.8);
+    color: var(--blue);
+    font-weight: bold;
   }
 
   .emojis {
-    padding: 0.625rem;
+    padding: 1rem 0rem;
     text-align: center;
   }
 
@@ -85,5 +86,34 @@
       transform: scale(1.1);
       transition: 0.1s ease-in-out;
     }
+  }
+}
+
+.dropdown {
+
+  option {
+    background-color: white;
+    border-bottom: 1px solid var(--blue);
+    font-family: 'Montserrat', sans-serif;
+
+    &:active {
+      background-color: var(--blue);
+      color: white;
+    }
+  }
+
+  background-color: white;
+  box-shadow: 0.188rem 0.188rem rgba(0, 0, 0, 0.2);
+  border: 0.063rem solid var(--blue);
+  border-radius: 0.313rem;
+  padding: 0.5rem;
+  font-style: italic;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+    border: 0.063rem solid var(--blue);
+    box-shadow: 0.313rem 0.313rem rgba(0, 0, 0, 0.2);
+    font-style: normal;
   }
 }

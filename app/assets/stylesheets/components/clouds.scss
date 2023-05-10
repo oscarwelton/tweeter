@@ -1,3 +1,38 @@
+.cloud {
+  background: white;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 9.375rem;
+  box-shadow: 0.625rem 0.625rem var(--light-shadow);
+  animation: move 90s infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+
+  &::before {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 8.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    top: -4.5rem;
+    right: 2rem;
+  }
+
+  &::after {
+    content: '';
+    background: white;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    top: -2.5rem;
+    left: 2.5rem;
+  }
+}
+
 .center {
   position: absolute;
   top: 45%;
@@ -5,38 +40,8 @@
   transform: translate(-50%, -50%);
 
   #cloud1 {
-    background: white;
-    width: 18.75rem;
-    height: 6.25rem;
-    border-radius: 9.375rem;
-    box-shadow: 0.625rem 0.625rem var(--light-shadow);
     animation: move 90s infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-
-    &::before {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 10.625rem;
-      height: 9.375rem;
-      border-radius: 50%;
-      top: -5.625rem;
-      right: 2.5rem;
-    }
-
-    &::after {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 6.25rem;
-      height: 6.25rem;
-      border-radius: 50%;
-      top: -3.125rem;
-      left: 3.125rem;
-    }
+    animation-direction: reverse;
   }
 }
 
@@ -47,38 +52,8 @@
   transform: translate(-50%, -50%);
 
   #cloud2 {
-    background: white;
-    width: 18.75rem;
-    height: 6.25rem;
-    border-radius: 9.375rem;
-    box-shadow: 0.625rem 0.625rem var(--light-shadow);
     animation: move 90s infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-
-    &::before {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 10.625rem;
-      height: 9.375rem;
-      border-radius: 50%;
-      top: -5.625rem;
-      right: 2.5rem;
-    }
-
-    &::after {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 6.25rem;
-      height: 6.25rem;
-      border-radius: 50%;
-      top: -3.125rem;
-      left: 3.125rem;
-    }
+    animation-direction: reverse;
   }
 }
 
@@ -90,38 +65,7 @@
   transform: translate(-50%, -50%);
 
   #cloud3 {
-    background: white;
-    width: 18.75rem;
-    height: 6.25rem;
-    border-radius: 9.375rem;
-    box-shadow: 0.625rem 0.625rem var(--light-shadow);
     animation: move 90s infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-
-    &::before {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 10.625rem;
-      height: 9.375rem;
-      border-radius: 50%;
-      top: -5.625rem;
-      right: 2.5rem;
-    }
-
-    &::after {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 6.25rem;
-      height: 6.25rem;
-      border-radius: 50%;
-      top: -3.125rem;
-      left: 3.125rem;
-    }
   }
 }
 
@@ -131,40 +75,8 @@
   right: 0%;
   transform: translate(50%, -50%);
 
-
   #cloud4 {
-    background: white;
-    width: 18.75rem;
-    height: 6.25rem;
-    border-radius: 9.375rem;
-    box-shadow: 0.625rem 0.625rem var(--light-shadow);
     animation: move 90s infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-
-    &::before {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 10.625rem;
-      height: 9.375rem;
-      border-radius: 50%;
-      top: -5.625rem;
-      right: 2.5rem;
-    }
-
-    &::after {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 6.25rem;
-      height: 6.25rem;
-      border-radius: 50%;
-      top: -3.125rem;
-      left: 3.125rem;
-    }
   }
 }
 
@@ -175,38 +87,8 @@
   transform: translate(-50%, -50%);
 
   #cloud5 {
-    background: white;
-    width: 18.75rem;
-    height: 6.25rem;
-    border-radius: 9.375rem;
-    box-shadow: 0.625rem 0.625rem var(--light-shadow);
     animation: move 90s infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-
-    &::before {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 10.625rem;
-      height: 9.375rem;
-      border-radius: 50%;
-      top: -5.625rem;
-      right: 2.5rem;
-    }
-
-    &::after {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 6.25rem;
-      height: 6.25rem;
-      border-radius: 50%;
-      top: -3.125rem;
-      left: 3.125rem;
-    }
+    animation-direction: reverse;
   }
 }
 
@@ -217,38 +99,7 @@
   transform: translate(-50%, -50%);
 
   #cloud6 {
-    background: white;
-    width: 18.75rem;
-    height: 6.25rem;
-    border-radius: 9.375rem;
-    box-shadow: 0.625rem 0.625rem var(--light-shadow);
     animation: move 80s infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-
-    &::before {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 10.625rem;
-      height: 9.375rem;
-      border-radius: 50%;
-      top: -5.625rem;
-      right: 2.5rem;
-    }
-
-    &::after {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 6.25rem;
-      height: 6.25rem;
-      border-radius: 50%;
-      top: -3.125rem;
-      left: 3.125rem;
-    }
   }
 
 }
@@ -261,38 +112,7 @@
   transform: translate(-50%, -50%);
 
   #cloud7 {
-    background: white;
-    width: 18.75rem;
-    height: 6.25rem;
-    border-radius: 9.375rem;
-    box-shadow: 0.625rem 0.625rem var(--light-shadow);
     animation: move 90s infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-
-    &::before {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 10.625rem;
-      height: 9.375rem;
-      border-radius: 50%;
-      top: -5.625rem;
-      right: 2.5rem;
-    }
-
-    &::after {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 6.25rem;
-      height: 6.25rem;
-      border-radius: 50%;
-      top: -3.125rem;
-      left: 3.125rem;
-    }
   }
 }
 
@@ -303,38 +123,8 @@
   transform: translate(-50%, -50%);
 
   #cloud8 {
-    background: white;
-    width: 18.75rem;
-    height: 6.25rem;
-    border-radius: 9.375rem;
-    box-shadow: 0.625rem 0.625rem var(--light-shadow);
     animation: move 70s infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-
-    &::before {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 10.625rem;
-      height: 9.375rem;
-      border-radius: 50%;
-      top: -5.625rem;
-      right: 2.5rem;
-    }
-
-    &::after {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 6.25rem;
-      height: 6.25rem;
-      border-radius: 50%;
-      top: -3.125rem;
-      left: 3.125rem;
-    }
+    animation-direction: reverse;
   }
 }
 
@@ -346,38 +136,7 @@
   transform: translate(-50%, -50%);
 
   #cloud9 {
-    background: white;
-    width: 18.75rem;
-    height: 6.25rem;
-    border-radius: 9.375rem;
-    box-shadow: 0.625rem 0.625rem var(--light-shadow);
     animation: move 90s infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-
-    &::before {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 10.625rem;
-      height: 9.375rem;
-      border-radius: 50%;
-      top: -5.625rem;
-      right: 2.5rem;
-    }
-
-    &::after {
-      content: '';
-      background: white;
-      position: absolute;
-      width: 6.25rem;
-      height: 6.25rem;
-      border-radius: 50%;
-      top: -3.125rem;
-      left: 3.125rem;
-    }
   }
 
 }

@@ -10,14 +10,14 @@
     </div>
     <div class="row">
       <%= f.label :tone, "Tone:" %>
-      <%= f.text_field :tone, class: "field", id: "tweet_tone" %>
+      <%= f.select :tone, options_for_select(['', 'Formal', 'Informal', 'Humerous', 'Serious', 'Optimistic', 'Critical', 'Motivating', 'Entusiastic']), {}, class: "dropdown", id: "tweet_tone" %>
     </div>
     <div class="row">
       <%= f.label :audience, "Target Audience:" %>
       <%= f.text_field :audience, class: "field", id: "tweet_audience" %>
     </div>
     <div class="row">
-      <%= f.label :hashtags, "#HashTags:" %>
+      <%= f.label :hashtags, "#Hashtags:" %>
       <%= f.text_field :hashtags, class: "field", id: "tweet_hashtags" %>
     </div>
     <div class="emojis">
