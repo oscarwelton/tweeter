@@ -12,7 +12,7 @@ body {
 }
 
 html {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .content {
@@ -37,7 +37,9 @@ html {
   font-weight: bold;
 }
 
-
+.opacity {
+  opacity: 0.5;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -48,7 +50,7 @@ html {
   }
 
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .content {
@@ -64,7 +66,7 @@ html {
   }
 
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .content {
@@ -79,7 +81,7 @@ html {
   }
 
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .content {
@@ -98,7 +100,7 @@ html {
   }
 
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .footer {
@@ -117,7 +119,7 @@ html {
     width: 30%;
   }
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
 
@@ -130,6 +132,6 @@ html {
     width: 30%;
   }
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
