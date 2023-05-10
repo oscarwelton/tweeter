@@ -4,10 +4,6 @@
   --dark-shadow: rgba(0, 0, 0, 0.5);
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
   margin: 1.875rem 0 0 0;
   background-color: var(--blue);
@@ -48,7 +44,7 @@ body {
   }
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .content {
@@ -64,7 +60,7 @@ body {
   }
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .content {
@@ -79,7 +75,7 @@ body {
   }
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .content {
@@ -98,7 +94,7 @@ body {
   }
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .footer {
@@ -116,6 +112,9 @@ body {
   .content {
     width: 30%;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -125,5 +124,8 @@ body {
   }
   .content {
     width: 30%;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
