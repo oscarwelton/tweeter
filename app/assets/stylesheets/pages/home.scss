@@ -57,6 +57,9 @@ html {
     width: 80%;
   }
 
+  .info-container {
+    width: 80%;
+  }
 
 }
 
@@ -72,6 +75,10 @@ html {
   .content {
     width: 70%;
   }
+
+  .info-container {
+    width: 70%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -85,6 +92,10 @@ html {
   }
 
   .content {
+    width: 60%;
+  }
+
+  .info-container {
     width: 60%;
   }
 }
