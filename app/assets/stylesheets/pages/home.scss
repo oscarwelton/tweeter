@@ -5,7 +5,7 @@
 }
 
 html {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -47,6 +47,10 @@ body {
     font-size: 10px;
   }
 
+  body {
+    overflow: hidden;
+  }
+
   .content {
     width: 80%;
   }
@@ -59,6 +63,10 @@ body {
     font-size: 12px;
   }
 
+  body {
+    overflow: hidden;
+  }
+
   .content {
     width: 70%;
   }
@@ -68,6 +76,10 @@ body {
 @media only screen and (min-width: 601px) {
   html {
     font-size: 14px;
+  }
+
+  body {
+    overflow: hidden;
   }
 
   .content {
@@ -83,6 +95,10 @@ body {
 
   .content {
     width: 50%;
+  }
+
+  body {
+    overflow: hidden;
   }
 
   .footer {

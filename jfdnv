@@ -1,0 +1,222 @@
+[33mcommit e9c7e13a17a22f7ea3e0487283718569b22aa5e5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31mheroku/master[m[33m)[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Wed May 10 15:48:30 2023 +0100
+
+    animations add horizontal scrolling
+
+[33mcommit 2ef0efa89c0598ae831debcbba3ce62b2abe38e5[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Wed May 10 15:45:30 2023 +0100
+
+    trying to fix scrolling
+
+[33mcommit 9e0eb3e9db64bc6edd0f87ec61467c477888ca95[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Wed May 10 15:37:40 2023 +0100
+
+    removed the plane and sun animations to simplify the design
+
+[33mcommit 45382aeef2ca24d41eda40021ae7470cd8d834f1[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Wed May 10 12:10:48 2023 +0100
+
+    managed to break the clouds - now fixed
+
+[33mcommit 5769cfb45655aab3ef30e786dc6d23bc30d8f39e[m[33m ([m[1;32mfucked[m[33m)[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Tue May 9 16:33:28 2023 +0100
+
+    responsiveness is coming
+
+[33mcommit f0c683eddac7986c2c4c975916f9af7b4197f2d7[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 22:00:43 2023 +0100
+
+    fix i think
+
+[33mcommit 22912686250aeda11bfd44a6a2a4c9ed07e3a220[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 21:52:54 2023 +0100
+
+    adjustments
+
+[33mcommit bf5d4fa926e1a4ec6ee965e47d5b6fc4a9a3dc1d[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 21:46:21 2023 +0100
+
+    responsive - almost
+
+[33mcommit b3a4971be644b08206061655b5e04bfab6edd11a[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 18:29:12 2023 +0100
+
+    cleaning css
+
+[33mcommit b94973643cbbed73e87ee44169f9347529aec1e8[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 17:26:49 2023 +0100
+
+    switch from sqlite
+
+[33mcommit 4c4f9bfd202766af6e7e605cc1ce3903c3423884[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 17:13:08 2023 +0100
+
+    heroku config
+
+[33mcommit db633de2192c421a0827688e57f9d3e4fefde960[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 16:56:28 2023 +0100
+
+    switching from sqlite to postgres
+
+[33mcommit 5d817ae278999afa909d4a0ccc2a3d9e794cd5f9[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 16:38:01 2023 +0100
+
+    not deplyoing to heroku
+
+[33mcommit ceaad7bca92621921054bccb4ee8518aa53f3bf8[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 16:37:53 2023 +0100
+
+    trying to deploy
+
+[33mcommit c68d6cdcf027f224e52c99ffc4b08b295249c7bb[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 16:12:06 2023 +0100
+
+    time to start making this thing responsive!
+
+[33mcommit d927ac5cd3ecf0373a15511f4f255e2f785a6ec7[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 15:35:15 2023 +0100
+
+    added favicon link
+
+[33mcommit d1f2ba8b740be6a95a29f34095c269a2b8f04fc3[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 15:24:44 2023 +0100
+
+    tweet counter
+
+[33mcommit 751397d1987c68afd70b5d3f932fa83b310ddc71[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 15:08:46 2023 +0100
+
+    added live counter for number of tweets
+
+[33mcommit bde6c0213d6cfdba7a6e23edce65ca2cac19adeb[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 15:01:42 2023 +0100
+
+    text in sun is now stationary
+
+[33mcommit 83839bfb1d5f93951798b545ec63693c79289fb4[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 14:47:41 2023 +0100
+
+    favicon!
+
+[33mcommit 737d42ee8d877e1ac507f756f8005d3237ce3714[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 14:00:36 2023 +0100
+
+    added live counter
+
+[33mcommit 2c59b4b8ed225c5131762ed2da50d8886aa53ea6[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 13:09:26 2023 +0100
+
+    character counter
+
+[33mcommit a49b22cd515569d57e69fcc6bf8b6dc3ce73c610[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 10:56:18 2023 +0100
+
+    added footer
+
+[33mcommit 309da3f50e7f051219706f065b4f3a871a61f18a[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Mon May 8 10:16:45 2023 +0100
+
+    added a sun and plane to the page
+
+[33mcommit 2a4bfea0d49a0cdfb09a07c0ee72edfe743aa414[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Sun May 7 13:55:49 2023 +0100
+
+    hello world
+
+[33mcommit dc477e4ce683579b99b17e9f59ee1622f0fe7102[m
+Merge: 922ddf6 ed7dc5f
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Sun May 7 12:15:35 2023 +0100
+
+    stimulus
+
+[33mcommit 922ddf6e98ff92bbb98d3b98faed921e9757e817[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Sun May 7 12:12:45 2023 +0100
+
+    stimulus is working
+
+[33mcommit 10dc521c3bad3f8063bb89a17177d65217af8b7d[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Sun May 7 10:28:18 2023 +0100
+
+    removed npm
+
+[33mcommit e29dcba0c73c22dc44ae40008943ec1c213293d6[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Sun May 7 09:30:41 2023 +0100
+
+    finally think i figured out how to get stimulus working with turbo
+
+[33mcommit 0c8437d1e83be14068c07d0e0ce5b52723fed8c9[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Sun May 7 08:52:45 2023 +0100
+
+    removed yarn and data-controllers
+
+[33mcommit bc84d59434f185594619205200e4c1d8a8561875[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Sun May 7 07:46:00 2023 +0100
+
+    need to start working on branches
+
+[33mcommit ed7dc5f92700d00c2c073a8e0787860608eda942[m
+Author: Oscar <123104712+oscposc@users.noreply.github.com>
+Date:   Sat May 6 10:19:15 2023 +0200
+
+    delete .env
+
+[33mcommit 4667b1f196b3995515edff22947ac6dace7c25ea[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Sat May 6 09:18:25 2023 +0100
+
+    fix: added .env file to the gitignore
+
+[33mcommit dd974c117072afcd84409de53fbadb877d165e4c[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Fri May 5 20:32:14 2023 +0100
+
+    turbo rails is working !!!
+
+[33mcommit a00177c5a3ab124db03a67960d58a9faa8f03d9c[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Fri May 5 11:43:11 2023 +0100
+
+    the next step - turbo stream and adding ajax
+
+[33mcommit 5d92fc00ce64192ec84eb39041101afaa8debf99[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Thu May 4 20:54:08 2023 +0100
+
+    updating the database
+
+[33mcommit 8e724253dc99f54196de83324ecb8189b58db8df[m
+Author: oscar welton <oscarwelton@gmail.com>
+Date:   Thu May 4 16:43:26 2023 +0100
+
+    first commit - should definitely have commited already
