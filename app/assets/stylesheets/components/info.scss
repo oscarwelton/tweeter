@@ -38,7 +38,7 @@
   z-index: 2;
   display: none;
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%);
   background-color: white;
@@ -52,14 +52,36 @@
 
 #info-button {
   background-color: transparent;
-  color: var(--dark-shadow);
+  color: white;
+  width: 3rem;
   padding: 1rem;
   position: absolute;
   top: 0;
   border: none;
+  font-size: 1.5rem;
+  background-color: var(--blue);
+  border-radius: 50%;
+  box-shadow: 0.313rem 0.313rem var(--light-shadow);
 
   &:hover {
     color: var(--blue);
+    background-color: white;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    box-shadow: -0.313rem 0.313rem var(--light-shadow);
+
+  }
+}
+
+#close-button {
+  padding-top: 1rem;
+  background-color: transparent;
+  color: var(--blue);
+  border: none;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: var(--dark-shadow);
     transition: 0.1s ease-in-out;
     cursor: pointer;
   }

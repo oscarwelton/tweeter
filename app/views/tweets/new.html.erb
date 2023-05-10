@@ -6,12 +6,12 @@
       </div>
       <h1>Welcome to <span id="app-name">Tweeter!</span></h1>
       <h3>Generate tweets with <i>Artificial Intelligence</i></h3>
-      <button id="info-button">info<i class="fa-light fa-circle-info"></i></button>
+      <button id="info-button"><i class="fa-solid fa-info"></i></button>
+    </div>
+    <div id="tweet">
+      <%= render 'form' %>
+    </div>
   </div>
-  <div id="tweet">
-    <%= render 'form' %>
+  <div id="info-container" class="info-container">
+    <%= render 'shared/info' %>
   </div>
-</div>
-<div id="info-container" class="info-container">
-  <%= render 'shared/info' %>
-</div>
