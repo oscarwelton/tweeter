@@ -52,7 +52,7 @@
     height: 6.25rem;
     border-radius: 9.375rem;
     box-shadow: 0.625rem 0.625rem var(--light-shadow);
-    animation: move 85s infinite;
+    animation: move 90s infinite;
 
     &:hover {
       animation-play-state: paused;
@@ -64,7 +64,7 @@
       position: absolute;
       width: 10.625rem;
       height: 9.375rem;
-      border-radius: 3.125rem;
+      border-radius: 50%;
       top: -5.625rem;
       right: 2.5rem;
     }
@@ -75,12 +75,13 @@
       position: absolute;
       width: 6.25rem;
       height: 6.25rem;
-      border-radius: 3.125rem;
+      border-radius: 50%;
       top: -3.125rem;
       left: 3.125rem;
     }
   }
 }
+
 
 .bottom {
   position: absolute;
@@ -94,8 +95,7 @@
     height: 6.25rem;
     border-radius: 9.375rem;
     box-shadow: 0.625rem 0.625rem var(--light-shadow);
-    animation: move 35s infinite linear;
-    animation-direction: reverse;
+    animation: move 90s infinite;
 
     &:hover {
       animation-play-state: paused;
@@ -107,7 +107,7 @@
       position: absolute;
       width: 10.625rem;
       height: 9.375rem;
-      border-radius: 3.125rem;
+      border-radius: 50%;
       top: -5.625rem;
       right: 2.5rem;
     }
@@ -118,13 +118,12 @@
       position: absolute;
       width: 6.25rem;
       height: 6.25rem;
-      border-radius: 3.125rem;
+      border-radius: 50%;
       top: -3.125rem;
       left: 3.125rem;
     }
   }
 }
-
 
 .right-top {
   position: absolute;
@@ -132,13 +131,14 @@
   right: 0%;
   transform: translate(50%, -50%);
 
+
   #cloud4 {
     background: white;
     width: 18.75rem;
     height: 6.25rem;
     border-radius: 9.375rem;
     box-shadow: 0.625rem 0.625rem var(--light-shadow);
-    animation: move 70s infinite;
+    animation: move 90s infinite;
 
     &:hover {
       animation-play-state: paused;
@@ -166,7 +166,6 @@
       left: 3.125rem;
     }
   }
-
 }
 
 .right-bottom {
@@ -180,9 +179,8 @@
     width: 18.75rem;
     height: 6.25rem;
     border-radius: 9.375rem;
-    box-shadow: 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
-    animation: move 6.25rem infinite;
-    animation-direction: reverse;
+    box-shadow: 0.625rem 0.625rem var(--light-shadow);
+    animation: move 90s infinite;
 
     &:hover {
       animation-play-state: paused;
@@ -194,7 +192,7 @@
       position: absolute;
       width: 10.625rem;
       height: 9.375rem;
-      border-radius: 3.125rem;
+      border-radius: 50%;
       top: -5.625rem;
       right: 2.5rem;
     }
@@ -205,7 +203,7 @@
       position: absolute;
       width: 6.25rem;
       height: 6.25rem;
-      border-radius: 3.125rem;
+      border-radius: 50%;
       top: -3.125rem;
       left: 3.125rem;
     }
@@ -252,6 +250,7 @@
       left: 3.125rem;
     }
   }
+
 }
 
 
@@ -267,7 +266,7 @@
     height: 6.25rem;
     border-radius: 9.375rem;
     box-shadow: 0.625rem 0.625rem var(--light-shadow);
-    animation: move 70s infinite;
+    animation: move 90s infinite;
 
     &:hover {
       animation-play-state: paused;
@@ -295,7 +294,6 @@
       left: 3.125rem;
     }
   }
-
 }
 
 .left-top {
@@ -353,8 +351,7 @@
     height: 6.25rem;
     border-radius: 9.375rem;
     box-shadow: 0.625rem 0.625rem var(--light-shadow);
-    animation: move 70s infinite;
-    animation-direction: reverse;
+    animation: move 90s infinite;
 
     &:hover {
       animation-play-state: paused;
@@ -366,7 +363,7 @@
       position: absolute;
       width: 10.625rem;
       height: 9.375rem;
-      border-radius: 3.125rem;
+      border-radius: 50%;
       top: -5.625rem;
       right: 2.5rem;
     }
@@ -377,11 +374,12 @@
       position: absolute;
       width: 6.25rem;
       height: 6.25rem;
-      border-radius: 3.125rem;
+      border-radius: 50%;
       top: -3.125rem;
       left: 3.125rem;
     }
   }
+
 }
 
 @keyframes move {

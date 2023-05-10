@@ -1,5 +1,7 @@
 :root {
   --blue: #38B6FF;
+  --light-shadow: rgba(0, 0, 0, 0.2);
+  --dark-shadow: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -74,6 +76,12 @@ body {
 
   .content {
     width: 50%;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 
