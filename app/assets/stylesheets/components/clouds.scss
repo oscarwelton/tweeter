@@ -5,6 +5,7 @@
   border-radius: 9.375rem;
   box-shadow: 0.625rem 0.625rem var(--light-shadow);
   animation: move 90s infinite;
+  overflow-x: hidden;
 
   &:hover {
     animation-play-state: paused;
