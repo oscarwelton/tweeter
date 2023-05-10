@@ -4,11 +4,15 @@
   --dark-shadow: rgba(0, 0, 0, 0.5);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 1.875rem 0 0 0;
   background-color: var(--blue);
-  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .content {
@@ -18,6 +22,7 @@ body {
   border-radius: 2.813rem;
   box-shadow: 0.625rem 0.625rem rgba(0, 0, 0, 0.2);
   position: relative;
+  height: 80%;
 }
 
 .z-index {
