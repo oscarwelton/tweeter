@@ -52,20 +52,16 @@
 
 #info-button {
   background-color: transparent;
-  color: white;
-  width: 3rem;
+  color: var(--blue);
   padding: 1rem;
   position: absolute;
   top: 0;
-  border: none;
   font-size: 1.5rem;
-  background-color: var(--blue);
   border-radius: 50%;
-  box-shadow: 0.313rem 0.313rem var(--light-shadow);
 
   &:hover {
-    color: var(--blue);
-    background-color: white;
+    color: white;
+    background-color: var(--blue);
     transition: 0.1s ease-in-out;
     cursor: pointer;
     box-shadow: -0.313rem 0.313rem var(--light-shadow);
@@ -85,4 +81,8 @@
     transition: 0.1s ease-in-out;
     cursor: pointer;
   }
+}
+
+#tweet-count {
+  color: var(--blue);
 }
