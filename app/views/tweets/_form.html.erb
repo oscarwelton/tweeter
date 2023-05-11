@@ -2,7 +2,7 @@
   <%= form_with(model: @tweet, data: { turbo_form: true }) do |f| %>
     <div class="row">
       <%= f.label :topic, "Topic:" %>
-      <%= f.text_field :topic, class: "field", id: "tweet_topic" %>
+      <%= f.text_field :topic, class: "field", id: "tweet_topic", required: true %>
     </div>
     <div class="row">
       <%= f.label :keywords, "Keywords:" %>
@@ -10,7 +10,7 @@
     </div>
     <div class="row">
       <%= f.label :tone, "Tone:" %>
-      <%= f.select :tone, options_for_select(['', 'Formal', 'Informal', 'Humerous', 'Serious', 'Optimistic', 'Critical', 'Motivating', 'Entusiastic']), {}, class: "dropdown", id: "tweet_tone" %>
+      <%= f.select :tone, options_for_select(['', 'Formal', 'Informal', 'Humerous', 'Serious', 'Optimistic', 'Critical', 'Motivating', 'Entusiastic']), {}, class: "dropdown", id: "tweet_tone", required: true %>
     </div>
     <div class="row">
       <%= f.label :audience, "Target Audience:" %>
