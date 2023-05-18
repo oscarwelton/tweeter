@@ -1,4 +1,5 @@
 class TweetsController < ApplicationController
+  skip_before_action :verify_authenticity_token
   require 'openai'
   include ActionView::RecordIdentifier
   @@client = OpenAI::Client.new(access_token: ENV['OPENAI_KEY'])
