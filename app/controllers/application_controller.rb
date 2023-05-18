@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   private
 
   def set_content_security_policy
-    response.headers["Content-Security-Policy"] = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self'; frame-ancestors 'self' *;"
+    response.headers["Content-Security-Policy"] = "default-src 'self'; script-src 'self' 'unsafe-inline' blob:; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' i.ibb.co; frame-ancestors 'self' *;"
   end
 end
