@@ -10,6 +10,11 @@ module Tweeter
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
 
+
+    config.action_dispatch.default_headers = {
+      'X-Frame-Options' => 'ALLOWALL'
+    }
+
     config.before_configuration {
       dotenv_path = Rails.root.join(".env")
       if File.exist?(dotenv_path)
