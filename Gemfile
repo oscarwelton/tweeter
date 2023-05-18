@@ -82,3 +82,4 @@ gem 'turbolinks', '~> 5.2.0'
 #  gem 'sqlite3', group: :development
 gem 'pg'
 gem 'rails_12factor', group: :production
+gem 'rack-cors'
