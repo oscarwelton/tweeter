@@ -9,8 +9,6 @@ export default class extends Controller {
       return;
     }
     const num = tweet.innerText.length;
-    count.innerText = num;
+    count.innerText = num - 7;
   }
 }
-
-console.log("hello from the character counter controller!");
