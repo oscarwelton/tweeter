@@ -1,0 +1,7 @@
+{
+  "headers": {
+    "/": {
+      "X-Frame-Options": "ALLOWALL"
+    }
+  }
+}
